@@ -1,7 +1,9 @@
 import { test } from '@playwright/test';
 import { PageObjectManager } from '../models/PageObjectManager';
 
-test('Add New Lead to Club OS', async ({ browser }) => {
+test.beforeAll
+
+test('Add New Lead', async ({ browser }) => {
     const context = await browser.newContext({ storageState: 'state.json' });
     const page = await context.newPage();
     const pageObjectManager = new PageObjectManager(page);

@@ -3,7 +3,7 @@ import { PageObjectManager } from '../models/PageObjectManager';
 
 const dataset =  JSON.parse(JSON.stringify(require("../data/loginTestData.json")));
 
-test('Login to ClubOS', async ({ browser }) => {
+test('Login', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     const pageObjectManager = new PageObjectManager(page);

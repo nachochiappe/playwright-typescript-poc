@@ -21,11 +21,11 @@ export class BasePage {
     }
 
     async gotoBaseUrl() {
-        await this.page.goto('https://qa.club-os.com/')
+        await this.page.goto('https://fakeurl.com/')
     }
 
     async getBaseUrl() {
-        await expect(this.page).toHaveURL('https://qa.club-os.com/action/Dashboard/view');
+        await expect(this.page).toHaveURL('https://fakeurl.com/action/Dashboard/view');
     }
 
     async verifyLoggedUserFullname(fullname: string) {
@@ -38,6 +38,6 @@ export class BasePage {
             this.page.waitForNavigation(),
             this.newLead.click()
         ])
-        await expect(this.page).toHaveURL('https://qa.club-os.com/action/NewLead');
+        await expect(this.page).toHaveURL('https://fakeurl.com/action/NewLead');
     }
 }

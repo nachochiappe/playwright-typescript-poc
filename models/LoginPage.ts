@@ -20,7 +20,7 @@ export class LoginPage {
     }
 
     async goto() {
-        await this.page.goto('https://qa.club-os.com/');
+        await this.page.goto('https://fakeurl.com/');
         await expect(this.logo).toBeVisible();
     }
 
